@@ -1,0 +1,56 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Exercício 19 - Login com limite de tentativas</title>
+        <script>
+
+            var usuarioCorreto = "admin";
+            var senhaCorreta = "1234";
+            var tentativas = 0;
+            var loginRealizado = false;
+
+            function verificarLogin(usuario, senha) {
+
+                if (usuario == usuarioCorreto && senha == senhaCorreta) {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            }
+
+            while (tentativas < 3 && loginRealizado == false) {
+
+                var usuario = prompt("Digite seu usuário:");
+                var senha = prompt("Digite sua senha:");
+
+                if (verificarLogin(usuario, senha)) {
+
+                    loginRealizado = true;
+                    alert("Login realizado com sucesso!");
+
+                } else {
+
+                    tentativas++;
+
+                    if (tentativas < 3) {
+                        alert("Usuário ou senha estão errados.");
+                    }
+
+                }
+
+            }
+
+            if (loginRealizado == false) {
+                alert("Acesso bloqueado.");
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

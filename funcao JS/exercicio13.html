@@ -1,0 +1,32 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Exercício 13 - Funções</title>
+        <script>
+            var alunos = ["João", "Maria", "Pedro", "Ana", "Lucas"];
+
+            function procurarAluno(lista, nome) {
+
+                for (var i = 0; i < lista.length; i++) {
+
+                    if (lista[i] == nome) {
+                        return true;
+                    }
+
+                }
+
+                return false;
+            }
+
+            var nome = prompt("Digite o nome do aluno:");
+
+            if (procurarAluno(alunos, nome)) {
+                alert("Aluno encontrado");
+            } else {
+                alert("Aluno não encontrado");
+            }
+
+        </script>
+    </head>
+</html>

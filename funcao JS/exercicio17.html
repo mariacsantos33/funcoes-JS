@@ -1,0 +1,36 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Exercício 17 - Alunos aprovados</title>
+        <script>
+
+            var notas = [8, 5, 7, 4, 6, 9, 3, 10];
+
+            function contarAprovados(lista) {
+
+                var aprovados = 0;
+
+                for (var i = 0; i < lista.length; i++) {
+
+                    if (lista[i] >= 6) {
+                        aprovados++;
+                    }
+
+                }
+
+                return aprovados;
+            }
+
+            var resultado = contarAprovados(notas);
+
+            alert("Quantidade de alunos aprovados: " + resultado);
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

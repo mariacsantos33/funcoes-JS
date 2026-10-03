@@ -1,0 +1,37 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Exercício 18 - Sistema de Login</title>
+        <script>
+
+            var usuarioCorreto = "admin";
+            var senhaCorreta = "1234";
+
+            function verificarLogin(usuario, senha) {
+
+                if (usuario == usuarioCorreto && senha == senhaCorreta) {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            }
+
+            var usuario = prompt("Digite seu usuário:");
+            var senha = prompt("Digite sua senha:");
+
+            if (verificarLogin(usuario, senha)) {
+                alert("Login realizado com sucesso!");
+            } else {
+                alert("Usuário ou senha estão errados.");
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

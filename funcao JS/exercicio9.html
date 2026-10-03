@@ -1,0 +1,46 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Exercício 9 - Funções</title>
+        <script>
+
+            var num1 = Number(prompt("Digite um número: "))
+            var num2 = Number(prompt("Digite outro número: "))
+            var operacoes = prompt("Qual operação você deseja realizar? (+, -, *, /)")
+
+            function soma (num1, num2) {
+                if (operacoes == "+") {
+                resultadoSoma = num1 + num2
+                alert("O resultado da SOMA é " + resultadoSoma)
+                }
+            }
+            soma(num1, num2)
+
+            function subtracao (num1, num2) {
+                if (operacoes == "-") {
+                resultadoSubtracao = num1 - num2
+                alert("O resultado da SUBTRAÇÃO é " + resultadoSubtracao)
+                } 
+            }
+            subtracao(num1, num2)
+
+            function multiplicacao (num1, num2) {
+                if (operacoes == "*") {
+                resultadoMultiplicacao = num1 * num2
+                alert("O resultado da MULTIPLICAÇÃO é " + resultadoMultiplicacao)
+                }
+            }
+            multiplicacao(num1, num2)
+
+            function divisao (num1, num2) {
+                if (operacoes == "/") {
+                resultadoDivisao = num1 / num2
+                alert("O resultado da DIVISÃO é " + resultadoDivisao)
+                }
+            }
+            divisao(num1, num2)
+
+        </script>
+    </head>
+</html>

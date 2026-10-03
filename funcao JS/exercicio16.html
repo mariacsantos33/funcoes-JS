@@ -1,0 +1,36 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Exercício 16 - Maior número</title>
+        <script>
+
+            var numeros = [15, 42, 8, 73, 21, 56, 30];
+
+            function maiorNumero(lista) {
+
+                var maior = lista[0];
+
+                for (var i = 1; i < lista.length; i++) {
+
+                    if (lista[i] > maior) {
+                        maior = lista[i];
+                    }
+
+                }
+
+                return maior;
+            }
+
+            var resultado = maiorNumero(numeros);
+
+            alert("Maior número: " + resultado);
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

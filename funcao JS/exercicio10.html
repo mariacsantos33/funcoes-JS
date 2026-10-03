@@ -1,0 +1,30 @@
+<html lang="pt-br" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Exercício 10 - Funções</title>
+        <script>
+     
+            var nota1 = Number(prompt("Informe a nota 1: "))
+            var nota2 = Number(prompt("Informe a nota 2: "))
+
+            function media (nota1, nota2) {
+                resultado = (nota1 + nota2) / 2
+                alert("O resultado da média é " + resultado)
+            }
+
+            function situacao (media) {
+                if (resultado >= 6) {
+                    alert("Você foi aprovado!")
+                } 
+                else if (resultado < 6) {
+                    alert("Você foi reprovado!")
+                }
+            }
+
+            media(nota1, nota2)
+            situacao (media)
+
+        </script>
+    </head>
+</html>
